@@ -19,9 +19,11 @@ https://kenney.nl/assets/alien-ufo-pack
 https://opengameart.org/content/2d-explosion-animations-2-frame-by-frame
 
 https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie
-Heart Sprite Art By Nicole Marie T
+ ,Heart Sprite Art By Nicole Marie T
 
 https://kenney.nl/assets/kenney-fonts
+
+https://www.enchanted.media/downloads/simple-starfield-light-speed-animations/
 
 ## Future Development
 
