@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/Main_Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Starfield-Fast-10sec-Loop_1.ogv" type="VideoStream" id=2]
+[ext_resource path="res://UI/Background.gd" type="Script" id=3]
+[ext_resource path="res://Assets/kenvector_future_thin.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/kenvector_future.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 14
+font_data = ExtResource( 5 )
+
+[node name="Main_Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Background" type="VideoPlayer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+audio_track = 1
+stream = ExtResource( 2 )
+autoplay = true
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.12549 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+margin_bottom = 400.0
+custom_fonts/font = SubResource( 1 )
+text = "Welcome to The Space Shooter!"
+align = 1
+valign = 1
+
+[node name="Play" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -75.0
+margin_top = -20.0
+margin_right = 75.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 2 )
+text = "Play"
+
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
