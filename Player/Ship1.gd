@@ -25,7 +25,6 @@ func _physics_process(_delta):
 	position.x = wrapf(position.x, 0.0, Global.VP.x)
 	position.y = wrapf(position.y, 0.0, Global.VP.y)
 
-
 func get_input():
 	var dir = Vector2.ZERO
 	$Pivot/Exhaust.hide()
